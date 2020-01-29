@@ -1,10 +1,10 @@
 # node-express-mysql-pool
 This is an example of using express with MySQL pool.
 
-# MySql db configuration
+## MySql db configuration
 You can find it in /model/db.js.
 
-# Create Table
+## Create Table
 ```mysql
 CREATE TABLE IF NOT EXISTS `tasks` (
   `id` int(11) NOT NULL,
@@ -17,7 +17,7 @@ ALTER TABLE `tasks` ADD PRIMARY KEY (`id`);
 ALTER TABLE `tasks` MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 ```
 
-# Insert Sample Data
+## Insert Sample Data
 ```mysql
 INSERT INTO `tasks` (`id`, `task`, `status`, `created_at`) VALUES
 (1, 'Find bugs', 1, '2016-04-10 23:50:40'),
