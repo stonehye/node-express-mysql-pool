@@ -1,0 +1,28 @@
+{
+  "name": "test_app",
+  "version": "1.0.0",
+  "description": "This is an example of using express with MySQL pool.",
+  "main": "../app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ../app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stonehye/node-express-mysql-pool.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stonehye/node-express-mysql-pool/issues"
+  },
+  "homepage": "https://github.com/stonehye/node-express-mysql-pool#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.12",
+    "sequelize": "^6.6.5"
+  }
+}
