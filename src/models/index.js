@@ -25,26 +25,26 @@ async function test() {
 }
 test();
 
-db.orders = require("./orders/orders")(sequelize, Sequelize);
-db.orderStatus = require("./orders/orderStatus")(sequelize, Sequelize);
-db.orderItems = require("./orders/orderItems")(sequelize, Sequelize);
-db.orderOptions = require("./orders/orderOptions")(sequelize, Sequelize);
+// db.orders = require("./orders/orders")(sequelize, Sequelize);
+// db.orderStatus = require("./orders/orderStatus")(sequelize, Sequelize);
+// db.orderItems = require("./orders/orderItems")(sequelize, Sequelize);
+// db.orderOptions = require("./orders/orderOptions")(sequelize, Sequelize);
 
-db.orderStatus.hasMany(db.orders, { foreignKey: { allowNull: false } });
-db.orders.belongsTo(db.orderStatus);
+// db.orderStatus.hasMany(db.orders, { foreignKey: { allowNull: false } });
+// db.orders.belongsTo(db.orderStatus);
 
-db.orders.hasMany(db.orderItems, {
-  foreignKey: { name: "orderId", allowNull: false },
-});
-db.orderItems.belongsTo(db.orders, {
-  foreignKey: { name: "orderId", allowNull: false },
-});
+// db.orders.hasMany(db.orderItems, {
+//   foreignKey: { name: "orderId", allowNull: false },
+// });
+// db.orderItems.belongsTo(db.orders, {
+//   foreignKey: { name: "orderId", allowNull: false },
+// });
 
-db.orderItems.hasMany(db.orderOptions, {
-  foreignKey: { name: "orderItemId", allowNull: false },
-});
-db.orderOptions.belongsTo(db.orderItems, {
-  foreignKey: { name: "orderItemId", allowNull: false },
-});
+// db.orderItems.hasMany(db.orderOptions, {
+//   foreignKey: { name: "orderItemId", allowNull: false },
+// });
+// db.orderOptions.belongsTo(db.orderItems, {
+//   foreignKey: { name: "orderItemId", allowNull: false },
+// });
 
 module.exports = db;

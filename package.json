@@ -2,10 +2,10 @@
   "name": "test_app",
   "version": "1.0.0",
   "description": "This is an example of using express with MySQL pool.",
-  "main": "../app.js",
+  "main": "src/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ../app.js"
+    "start": "node src/app.js"
   },
   "repository": {
     "type": "git",
@@ -21,8 +21,11 @@
     "body-parser": "^1.19.0",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "express-error-handler": "^1.1.0",
     "mysql": "^2.18.1",
+    "mysql2": "^2.2.5",
     "nodemon": "^2.0.12",
-    "sequelize": "^6.6.5"
+    "sequelize": "^6.6.5",
+    "sequelize-cli": "^6.2.0"
   }
 }

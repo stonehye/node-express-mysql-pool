@@ -1,5 +1,5 @@
 const express = require("express");
-require("dotenv").config({ path: "./.env.dev" });
+// require("dotenv").config({ path: "./.env.dev" });
 const expressErrorHandler = require("express-error-handler");
 const config = require("./config/config");
 const router = require("./routes");
